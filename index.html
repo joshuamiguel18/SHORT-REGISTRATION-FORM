@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Registration Form</h2>
+        <div class="form-container">
+            <form action="action_page.php" method="POST">
+                <div class="row1">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="username" id="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="pw" id="pw" placeholder="Password" required>
+                    </div>
+                </div>
+
+                <input type="hidden" name="emailMe" id="emailMe" value="joshuamigueltoribio@gmail.com">
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <div class="choice">
+                        <input type="radio" name="gender" id="genderm" value="m">
+                        <label for="genderm">Male</label>
+                    </div> 
+                    <div class="choice">
+                        <input type="radio" name="gender" id="genderf" value="f">
+                        <label for="genderf">Female</label>
+                    </div>  
+                </fieldset>
+
+                <div class="terms-field">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">Click to accept our <a href="#">Terms</a>.</label>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" value="register">Register</button>
+                    <button type="reset">Reset</button>
+                </div>  
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
